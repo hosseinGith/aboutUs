@@ -50,6 +50,51 @@ main section div .title {
   font-size: 16px;
   text-align: center;
 }
+main section div .contents {
+  padding: 10px;
+}
+main section div .contents .dropDown {
+  padding: 10px;
+  cursor: pointer;
+}
+main section div .contents ul {
+  overflow: hidden;
+  height: 0;
+}
+main section div .contents ul:not(.active) {
+  animation: hideDrop 0.6s linear;
+}
+main section div .contents ul.active {
+  display: block;
+  animation: dropDown 0.6s linear;
+  height: 500px;
+}
+@keyframes hideDrop {
+  0% {
+    opacity: 1;
+    height: 500px;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    height: 500px;
+  }
+}
 main section div .sites {
   width: 100%;
   margin: 30px 0;

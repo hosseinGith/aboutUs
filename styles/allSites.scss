@@ -33,6 +33,51 @@ main {
         font-size: 16px;
         text-align: center;
       }
+      .contents {
+        padding: 10px;
+        .dropDown {
+          padding: 10px;
+          cursor: pointer;
+        }
+        ul {
+          overflow: hidden;
+          height: 0;
+        }
+        ul:not(.active) {
+          animation: hideDrop 0.6s linear;
+        }
+        ul.active {
+          display: block;
+          animation: dropDown 0.6s linear;
+          height: 500px;
+        }
+        @keyframes hideDrop {
+          0% {
+            opacity: 1;
+            height: 500px;
+          }
+          50% {
+            opacity: 0.5;
+          }
+          100% {
+            opacity: 0;
+            height: 0;
+          }
+        }
+        @keyframes dropDown {
+          0% {
+            opacity: 0;
+            height: 0;
+          }
+          50% {
+            opacity: 0.5;
+          }
+          100% {
+            opacity: 1;
+            height: 500px;
+          }
+        }
+      }
       .sites {
         width: 100%;
         margin: 30px 0;
