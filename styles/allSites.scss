@@ -1,0 +1,60 @@
+@import "./mainSettings";
+
+header {
+  section {
+    div {
+      .siteURL {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          background-color: $mainBgColor;
+          li {
+            a {
+              color: $aLinkColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  section {
+    padding: 10px;
+    background-color: $mainBgColor;
+    div {
+      .title {
+        width: 100%;
+        background-color: $mainBgColor2;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+      }
+      .sites {
+        width: 100%;
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 90px;
+        .item {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          a {
+            img {
+              width: 100%;
+              max-width: 800px;
+              box-shadow: 0 0 10px #000;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@import "./footer";

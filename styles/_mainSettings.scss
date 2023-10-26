@@ -1,0 +1,31 @@
+$bodyBg: #ddd;
+$headerAfterBgCl: #f11818;
+$mainBgColor: #fff;
+$mainBgColor2: #18df82;
+$aLinkColor: #153ef1;
+$textColor: #000;
+@font-face {
+  font-family: vazir;
+  src: url(../assets/fonts/vazir/Vazir.ttf) format("truetype");
+  src: url(../assets/fonts/vazir/Vazir.woff) format("woff");
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: vazir;
+  background-color: $bodyBg;
+}
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}

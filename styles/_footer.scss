@@ -1,0 +1,44 @@
+footer {
+  margin: 30px 0;
+  section {
+    background-color: $mainBgColor;
+    .aboutUs {
+      padding: 20px 30px;
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      .contactUs {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .otherSites {
+      ul {
+        li {
+          a {
+            color: $textColor;
+            opacity: 0.7;
+            transition: all 0.3s;
+          }
+          a:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    section {
+      .aboutUs {
+        flex-direction: row;
+      }
+    }
+  }
+}
